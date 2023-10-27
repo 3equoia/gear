@@ -1,0 +1,99 @@
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<body class="bg-light">
+	<div style="margin-top: 5%" class="container">
+	<div class="col">
+	<table class="table table-striped table-bordered border-secondary w-50 text-center mx-auto border m-3">
+		<thead>
+			<tr>
+				<th class="table-info border-secondary">{{ module }}</th>
+				<th class="table-info border-secondary">module</th>
+			</tr>
+			<tr>
+				<th class="table-info border-secondary">{{ teeth }}</th>
+				<th class="table-info border-secondary">teeth</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>{{ teta|floatformat:4 }}</td>
+				<td>زاویه گام </td>
+			</tr>
+			<tr>
+				<td>{{ cos|floatformat:4 }}</td>
+				<td>کسینوس زاویه </td>
+			</tr>
+			<tr>
+				<td>{{sin|floatformat:4}}</td>
+				<td>سینوس زاویه </td>
+			</tr>
+			<tr>
+				<td>{{p|floatformat:4}}</td>
+				<td>گام </td>
+			</tr>
+			<tr>
+				<td>{{ do|floatformat:4 }}</td>
+				<td>قطر متوسط </td>
+			</tr>
+			<tr>
+				<td>{{ da|floatformat:4 }}</td>
+				<td>قطر بزرگ </td>
+			</tr>
+			<tr>
+				<td>{{ df|floatformat:4 }}</td>
+				<td>دایره داخلی چرخ دنده </td>
+			</tr>
+			<tr>
+				<td>{{ c|floatformat:4 }}</td>
+				<td>لقی </td>
+			</tr>
+			<tr>
+				<td>{{ Ha|floatformat:4 }}</td>
+				<td>ارتفاع سر دنده </td>
+			</tr>
+			<tr>
+				<td>{{ Hf|floatformat:4 }}</td>
+				<td>ارتفاع پای دنده </td>
+			</tr>
+			<tr>
+				<td>{{ H|floatformat:4 }}</td>
+				<td>ارتفاع کل دنده </td>
+			</tr>
+			<tr>
+				<td>{{ b|floatformat:4 }}</td>
+				<td>پهنای چرخ دنده </td>
+			</tr>
+			<tr>
+				<td>{{ s|floatformat:4 }}</td>
+				<td>ضخامت دنده </td>
+			</tr>
+			<tr>
+				<td>{{ I|floatformat:4 }}</td>
+				<td>فاصله شیار </td>
+			</tr>
+			
+		</tbody>
+	</table>
+	</div>
+	<div class="text-center fw-bold fs-4">
+		<p>سفارش برنامه مشابه: <a href="mailto:a2moshiri1385@gmail.com">پیام دهید</a></p>
+	</div>
+</body>
+
+	<!-- <p>زاویه گام :  {{ teta }}</p> -->
+	<!-- <p>کسینوس زاویه :  {{ cos }}</p> -->
+	<!-- <p>سینوس زاویه :  {{sin}}</p> -->
+	<!-- <p>گام :  {{p}}</p> -->
+	<!-- <p>قطر متوسط :  {{do}}</p> -->
+	<!-- <p>قطر بزرگ :  {{da}}</p> -->
+	<!-- <p>دایره داخلی چرخ دنده :  {{df}}</p> -->
+	<!-- <p>لقی :  {{c}}</p> -->
+	<!-- <p>ارتفاع سر دنده :  {{Ha}}</p> -->
+	<!-- <p>ارتفاع پای دنده :  {{Hf}}</p> -->
+	<!-- <p>ارتفاع کل دنده :  {{H}}</p> -->
+	<!-- <p>پهنای چرخ دنده :  {{b}}</p> -->
+	<!-- <p>ضخامت دنده :  {{s}}</p> -->
+	<!-- <p>فاصله شیار :  {{I}}</p> -->
+	<!-- <p>ss :  {{ss}}</p> -->
+	<!-- <p>q : {{q}}</p> -->

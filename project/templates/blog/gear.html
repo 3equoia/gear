@@ -1,0 +1,18 @@
+{% load crispy_forms_tags %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/		bootstrap.rtl.min.css" integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+
+<body class="bg-light lg">
+	<div class="container pt-5" style="margin-top: 5%">
+		<div class="row">
+		<form class="border col-6 border-4 border-secondary py-5 text-center m-auto" method="post" >
+			{% csrf_token %}
+			<div>{{ form.module|as_crispy_field }}</div>
+			<hr>
+			<div>{{ form.teeth|as_crispy_field }}</div>
+			<br>
+			<button class="btn btn-success">submit</button>
+		</form>
+	</div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
+</body>
